@@ -1,0 +1,151 @@
+/* Reset default margins and padding */
+/*filename=styles.css*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('images/lbg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.container {
+    display: flex;
+    width: 1000px;
+    height: 600px;
+    background: #7bb1a3;
+    border-radius: 27px;
+}
+
+/* Left box - Registration form */
+.left-box {
+    width: 50%;
+    padding: 40px;
+    background-color: #7bb1a3;
+    border-bottom-left-radius: 27px;
+    border-top-left-radius: 27px;
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+        
+.form-group {
+    margin-bottom: 20px;
+    color: black;
+    font-size: large;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.input-group {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.input-group-append {
+    margin-left: -1px;
+}
+
+.btn-outline-secondary {
+    border: 1px solid #ddd;
+    padding: 10px;
+    background: white;
+    cursor: pointer;
+}
+
+.btn-primary {
+    width: 100%;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 12px 40px;
+    background: transparent;
+    border: 2px solid black;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+.btn-primary:hover{
+    background: #faf0e4;
+    color: black;
+}
+
+
+
+/* Right box - Welcome message */
+.right-box {
+    width: 50%;
+    padding: 40px;
+    background-image: url('images/rbg.jpg');
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-top-right-radius: 27px;
+    border-bottom-right-radius: 27px;
+}
+
+h1{
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.right-box h2 {
+    margin-bottom: 20px;
+    font-size: 2.5em;
+}
+
+.right-box p {
+    margin-bottom: 20px;
+    font-size: 1.1em;
+}
+
+.right-box .login-btn {
+    padding: 12px 40px;
+    background: transparent;
+    border: 2px solid black;
+    color: black;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.right-box .login-btn:hover {
+    background: #7bb1a3;
+    color: black;
+    
+}
+
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
