@@ -13,7 +13,6 @@
     <div class="overlay"></div>
 
     <div class="container">
-        <!-- Left box with registration form -->
         <div class="left-box">
             
             <form method="POST" action="{{ url_for('register') }}">
@@ -55,7 +54,6 @@
             
         </div>
         
-        <!-- Right box with welcome message -->
         <div class="right-box">
             <h2>Welcome to Register</h2>
             <p>Already have an account?</p>
@@ -63,9 +61,8 @@
         </div>
     </div>
 
-    <!-- JavaScript for toggling visibility -->
     <script>
-        // Password field toggle
+       
         const togglePassword = document.getElementById("togglePassword");
         const passwordField = document.getElementById("password");
         const passwordIcon = document.getElementById("passwordIcon");
@@ -76,7 +73,7 @@
             passwordIcon.className = isPassword ? "fa-solid fa-eye-slash" : "fa-solid fa-eye";
         });
 
-        // Confirm Password field toggle
+
         const toggleConfirmPassword = document.getElementById("toggleConfirmPassword");
         const confirmPasswordField = document.getElementById("confirm-password");
         const confirmPasswordIcon = document.getElementById("confirmPasswordIcon");
